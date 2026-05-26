@@ -64,13 +64,13 @@ Make sure you have Python installed, along with a web driver (like ChromeDriver)
 
 4. The tool will process the page and output:
 
-** Extracted text, headers, and meta data.
+   * Extracted text, headers, and meta data.
 
-** A report on broken links.
+   * A report on broken links.
 
-** Performance metrics in seconds.
+   * Performance metrics in seconds.
 
-** A clean list of all unique internal/external URLs.
+   * A clean list of all unique internal/external URLs.
 
 ## System Architecture & Workflow
 
@@ -94,13 +94,13 @@ Make sure you have Python installed, along with a web driver (like ChromeDriver)
 
 3. Provide the destination URL when prompted:
 
-       Enter target URL: [https://example.com](https://example.com)
+       Enter target URL: [https://example.com]
 
 4. View the structured technical and SEO logs printed sequentially.
 
 ## Sample Output & Reports
 
-    [+] Initiating Audit for: [https://example.com](https://example.com)
+    [+] Initiating Audit for: [https://example.com]
 
     [+] Page Load Performance: Backend (0.32s) | Frontend (1.45s)
 
@@ -118,7 +118,7 @@ Make sure you have Python installed, along with a web driver (like ChromeDriver)
     
       - Status 200 (OK): 22
     
-      - Status 404 (Broken): 2 [[http://example.com/broken-link](http://example.com/broken-link)]
+      - Status 404 (Broken): 2 [http://example.com/broken-link]
 
 ## Future Enhancements
 
