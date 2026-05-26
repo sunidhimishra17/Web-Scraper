@@ -71,3 +71,59 @@ Make sure you have Python installed, along with a web driver (like ChromeDriver)
 ** Performance metrics in seconds.
 
 ** A clean list of all unique internal/external URLs.
+
+## System Architecture & Workflow
+
+1. **User Input:** Takes the target website URL.
+
+2. **Dynamic Request Management:** Selenium initializes a headless browser session to fully render the DOM.
+
+3. **Parsing & Filtering:** BeautifulSoup processes the static/dynamic HTML structure.
+
+4. **Validation Pipeline:** The `requests` module parallelly tests discovered hyperlinks for HTTP response codes.
+
+5. **Output Generation:** Displays structured analytics directly on the console/notebook interface.
+
+## Usage & Execution
+
+1. Open the Jupyter Notebook / Google Colab file:
+
+       Web_Scraping_using_python_and_beautifulsoup.ipynb
+
+2. Execute the setup cells to load libraries and configure the WebDriver.
+
+3. Provide the destination URL when prompted:
+
+       Enter target URL: [https://example.com](https://example.com)
+
+4. View the structured technical and SEO logs printed sequentially.
+
+## Sample Output & Reports
+
+    [+] Initiating Audit for: [https://example.com](https://example.com)
+
+    [+] Page Load Performance: Backend (0.32s) | Frontend (1.45s)
+
+    [+] Word Count Analyzed: 512 words.
+
+    [+] SEO Audit:
+       
+      - Title: Example Domain
+        
+      - Meta Description: Found (Length: 155 chars)
+
+    [+] Link Integrity Check:
+    
+      - Total Links Found: 24
+    
+      - Status 200 (OK): 22
+    
+      - Status 404 (Broken): 2 [[http://example.com/broken-link](http://example.com/broken-link)]
+
+## Future Enhancements
+
+1. Integrate Pandas to export audit logs directly into automated .csv or .xlsx sheets.
+
+2. Implement Multi-threading / Asynchronous requests (asyncio/aiohttp) to speed up bulk link testing.
+
+3. Add automated scheduling using cron jobs for continuous website monitoring.
