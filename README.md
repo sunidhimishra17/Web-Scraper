@@ -98,28 +98,6 @@ Make sure you have Python installed, along with a web driver (like ChromeDriver)
 
 4. View the structured technical and SEO logs printed sequentially.
 
-## Sample Output & Reports
-
-    [+] Initiating Audit for: [https://example.com]
-
-    [+] Page Load Performance: Backend (0.32s) | Frontend (1.45s)
-
-    [+] Word Count Analyzed: 512 words.
-
-    [+] SEO Audit:
-       
-      - Title: Example Domain
-        
-      - Meta Description: Found (Length: 155 chars)
-
-    [+] Link Integrity Check:
-    
-      - Total Links Found: 24
-    
-      - Status 200 (OK): 22
-    
-      - Status 404 (Broken): 2 [http://example.com/broken-link]
-
 ## Future Enhancements
 
 1. Integrate Pandas to export audit logs directly into automated .csv or .xlsx sheets.
