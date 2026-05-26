@@ -64,10 +64,10 @@ Make sure you have Python installed, along with a web driver (like ChromeDriver)
 
 4. The tool will process the page and output:
 
-Extracted text, headers, and meta data.
+* Extracted text, headers, and meta data.
 
-A report on broken links.
+* A report on broken links.
 
-Performance metrics in seconds.
+* Performance metrics in seconds.
 
-A clean list of all unique internal/external URLs.
+* A clean list of all unique internal/external URLs.
